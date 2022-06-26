@@ -1,0 +1,24 @@
+P=int(input("Enter the range 1: "))
+Q= int(input("Enter the range 2: "))
+Sum=0
+A=[]
+X=0
+B=[]
+Y=0
+for i in range(P,Q):
+    Sum=Sum+i
+    if i%2==0:
+        A.append(i)
+        X=X+i
+    else:
+        B.append(i)
+        Y=Y+i
+    D=X-Y
+print(A)
+print(B)
+print("Sum of even numbers is:", X)
+print("Sum of odd numbers is:", Y)
+print("Difference between even, odd numbers is",D)
+print("Sum of numbers in rangeis:", Sum)
+
+
