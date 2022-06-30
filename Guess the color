@@ -1,10 +1,12 @@
 import random
-color=['Orange','White','Black','Blue','Red']
-ncolor=color[random.randint(0,4)]
+l=['black', 'blue', 'red', 'black', 'purple']
 for i in range(0,3):
-    ucolor=color[int(input("Enter your choice btw 0-4:"))]
-    if (ucolor==ncolor):
-        print("Hurray! you guessed it right ")
-        break;
+    u=int(input("Enter your guess:"))
+    if(u>4):
+        print("Enter the valid input: ")
+    else:
+        if(l[u]==l[random.randint(0, 4)]):
+         print("Hurray,You guessed it right")
+         break;
 else:
-    print("Better luck next time!")
+    print("Better luck next time")
