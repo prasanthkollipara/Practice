@@ -1,9 +1,9 @@
 import random
-l=['black', 'blue', 'red', 'black', 'purple']
+l=['black', 'blue', 'red', 'green', 'purple']
 for i in range(0,3):
     u=int(input("Enter your guess:"))
     if(u>4):
-        print("Enter the valid input: ")
+        print("Enter a valid input: ")
     else:
         if(l[u]==l[random.randint(0, 4)]):
          print("Hurray,You guessed it right")
