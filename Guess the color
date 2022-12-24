@@ -2,11 +2,14 @@ import random
 l=['black', 'blue', 'red', 'green', 'purple']
 for i in range(0,3):
     u=int(input("Enter your guess:"))
-    if(u>4):
+    if(u>5):
         print("Enter a valid input: ")
+        break;
     else:
-        if(l[u]==l[random.randint(0, 4)]):
+        y= random.randint(1, 4)
+        if(l[u]==l[y]):
          print("Hurray,You guessed it right")
          break;
 else:
     print("Better luck next time")
+    print("The correct number was", y)
