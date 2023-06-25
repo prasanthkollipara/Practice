@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "This is test message"
+echo "please, help me !"
+ping google.com > ~/temp
+
+
